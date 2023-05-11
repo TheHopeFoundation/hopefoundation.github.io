@@ -1,33 +1,56 @@
 
-    <html>
-<head>
-<style>
-    .box {
-        width: 100px;
-        height: 30px;
-        background-color: white;
-        float: left;
-        padding: 20px;
-        margin-top: = 10px;
-        transition: background-color 0.3s ease;
-    }
+<html>
+    <head>
+        <title>My Website</title>
+        <style>
+            body {
+                text-align: center;
+            }
     
-    .box:hover {
-        background-color: grey;
-    }
-</style>
-<head>
-<style>
-body {text-align: center;}
-</style>
-
-<body>
-    <div class="box">
-        <p>hello world <p>
-    </div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-</body>
-</html>
+            .box {
+                width: 203px;
+                height: 30px;
+                background-color: rgb(208, 224, 227);
+                float: left;
+                padding: 20px;
+                margin-top: 10px;
+                transition: background-color 0.3s ease;
+            }
+    
+            .box:hover {
+                background-color: #7ca5af;
+            }
+    
+            /* Use the @font-face rule to import the Abril Fatface font */
+            @font-face {
+                font-family: 'Abril Fatface';
+                src: url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+            }
+    
+            /* Set the font for your HTML elements to Abril Fatface */
+            body {
+                font-family: 'Abril Fatface', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <p>Mian</p>
+        </div>
+        <div class="box">
+            <p>Chat Bot</p>
+        </div>
+        <div class="box">
+            <p>Posters</p>
+        </div>
+        <div class="box">
+            <p>Art</p>
+        </div>
+        <div class="box">
+            <p>Writing</p>
+        </div>
+        <div class="box">
+            <p>Workshops</p>
+        </div>
+    </body>
+    </html>
