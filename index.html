@@ -1,5 +1,7 @@
 
-<html>
+<!DOCTYPE html>
+<html lang ="en">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
     <head>
         <title>The Hope Foundation - Home</title>
         <style>
@@ -8,13 +10,19 @@
             }
     
             .box {
-                width: 203px;
-                height: 30px;
-                background-color: rgb(208, 224, 227);
-                float: left;
-                padding: 20px;
-                margin-top: 10px;
+                width: 200px;
+                height: 100px;
+                border: none;
+                background-color: rgb(77, 77, 77);
                 transition: background-color 0.3s ease;
+                border-radius: 4px;
+                cursor: pointer;
+                padding: 15px 32px;
+                display: inline-block;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                font-family: 'Abril Fatface', sans-serif;
+                font-size: 24px;
             }
     
             .box:hover {
@@ -22,32 +30,13 @@
             }
     
         </style>
-        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
-        <style>
-          h2 {
-            font-family: 'Abril Fatface', sans-serif;
-            text-align: center;
-          }
-        </style>
     </head>
     <body>
-        <div class="box">
-            <h2>Home</h2>
-        </div>
-        <div class="box">
-            <h2>Chat Bot</h2>
-        </div>
-        <div class="box">
-            <h2>Posters</h2>
-        </div>
-        <div class="box">
-            <h2>Art</h2>
-        </div>
-        <div class="box">
-            <h2>Writing</h2>
-        </div>
-        <div class="box">
-            <h2>Workshops</h2>
-        </div>
+        <button class="box">Home</button>
+        <button class="box">Chat Bot</button>
+        <button class="box">Posters</button>
+        <button class="box">Art</button>
+        <button class="box">Writing</button>
+        <button class="box">Workshops</button>
     </body>
     </html>
