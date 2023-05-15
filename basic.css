@@ -22,3 +22,11 @@ body {
 .button:hover {
     background-color: #7ca5af;
 }
+.subheading {
+    border-radius: 4px;
+    color: rgb(29, 23, 23);
+    display: inline-block;
+    text-align: center;
+    font-family: 'Abril Fatface', sans-serif;
+    font-size:50px;
+}
