@@ -14,16 +14,23 @@ body {
     display: inline-block;
     color: rgb(70, 70, 70);
     text-align: center;
+    text-decoration: none;
     font-family: 'Abril Fatface', sans-serif;
     font-size:24px;
     
+}
+.current {
+    background-color: rgb(124, 165, 175);
 }
 .large {
     width: 200px;
     height: 100px;
 }
 .button:hover {
-    background-color: #7ca5af;
+    background-color: rgb(124, 165, 175);
+}
+.button:link {
+    text-decoration: none;
 }
 .subheading {
     color: rgb(29, 23, 23);
@@ -40,3 +47,9 @@ body {
     height: 100px;
    
 }
+/*  255, 217, 102 brigher yellow 
+    255, 242, 204 lighter yellow 
+	124, 165, 175 brighter grey
+    208, 224, 227 lighter grey 
+    224, 102, 102 bright red 
+    244, 204, 204 lighter red 
