@@ -14,6 +14,7 @@ body {
     display: inline-block;
     color: rgb(70, 70, 70);
     text-align: center;
+    justify-content: center;
     text-decoration: none;
     font-family: 'Abril Fatface', sans-serif;
     font-size:24px;
@@ -28,7 +29,7 @@ a {
 }
 .large {
     width: 200px;
-    height: 50px;
+    height: 75px;
 }
 .button:hover {
     background-color: rgb(124, 165, 175);
