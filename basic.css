@@ -1,18 +1,6 @@
 body {
     background-color: rgb(254, 242, 203);
 }
-.backcolorSelectionBar {
-    
-    background-color: rgb(224, 102, 102);
-    font-size:35px;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-   
-}
 
 .center {
     text-align: center;
@@ -29,7 +17,7 @@ body {
     text-align: center;
     justify-content: center;
     text-decoration: none;
-    font-family: 'Abril Fatface', sans-serif;
+    font-family: 'Comfortaa', cursive;
     font-size:24px;
     
 }
@@ -59,13 +47,31 @@ a {
     font-size:35px;
     display: block;
     position: absolute;
-    top: 100;
+    top: 90px;
     left: 0;
     width: 100%;
     height: 50px;
    
 }
-
+.backcolorSelectionBar {
+    background-color: rgb(11, 11, 11);
+    font-size:35px;
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+   
+}
+.ybackcolorSelectionBar {
+    background-color: rgb(11, 11, 11);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+}
+.heading {
+    color: black;
+    font-family: 'Abril Fatface', sans-serif;
+}
 /*  255, 217, 102 brigher yellow 
     255, 242, 204 lighter yellow 
 	124, 165, 175 brighter grey
