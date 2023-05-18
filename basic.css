@@ -1,6 +1,19 @@
 body {
     background-color: rgb(254, 242, 203);
 }
+.backcolorSelectionBar {
+    
+    background-color: rgb(224, 102, 102);
+    font-size:35px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+   
+}
+
 .center {
     text-align: center;
 }
@@ -38,19 +51,20 @@ a {
 }
 .subheading {
     color: rgb(29, 23, 23);
-    background-color: rgb(112, 228, 251);
+    background-color: rgb(224, 102, 102);
     text-align: center;
     border-radius: 0px;
     font-family: 'Abril Fatface', sans-serif;
-    font-size:50px;
+    font-size:35px;
     display: block;
     position: absolute;
     top: 100;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 50px;
    
 }
+
 /*  255, 217, 102 brigher yellow 
     255, 242, 204 lighter yellow 
 	124, 165, 175 brighter grey
