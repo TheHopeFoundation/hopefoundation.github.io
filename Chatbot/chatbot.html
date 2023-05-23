@@ -4,7 +4,7 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <title>The Hope Foundation - Chatbot</title>
-    <link rel ="shortcut icon" href="favicon.ico"/>
+    <link rel ="shortcut icon" href="../favicon.ico"/>
     <head>
         <div class="center">
             <a href="../index.html"><button class="button large">Home</button></a>
@@ -17,5 +17,81 @@
         <div class="subheading">Chatbot</div>
     </head>
     <body>
+        <div style="padding-top: 100px;">
+
+            <textarea type="text" style="width:80%; height:75px;" placeholder="How are you feeling? Feel free to express your thoughts, emotions, and experiences. The AI is here to listen and provide support. Nothing is logged." id="Letter" name="Letter"></textarea><br>
+            <div id="AIResults">
+                <h3>HOPE AI Response</h3>
+            </div>
+            <p>AI-generated response to your writing. Our AI will be able to give a personalized response with resources that may be helpful for your situation. Please be patient as results may take several moments to fully load.<p>
+
+            <div style="text-align: right; padding:15px;">
+
+            <button class="btn-primary" name="go" id="go" type="submit">Submit</button>
+
+            </div>    
+
+            <script>
+
+                // Add event listener to form submission
+                console.log('whats up brae bae!')
+                document.getElementById('go').addEventListener('click', function(event) {
+
+                event.preventDefault(); // Prevent form from being submitted
+
+                var ResponseType = ""
+
+                //set results to scrolling gif CAN CHANGE
+
+                //document.getElementById('AIResults').innerHTML = "<img style=';height:96;width:82;' height=96px width=82px src='https://giphy.com/embed/l0He4fJxPCbfqv7Xi'>" ;
+                document.getElementById('AIResults').innerHTML =`<p>Please be patient. It takes me about 30 seconds to think.</p> <iframe src="https://giphy.com/embed/l0He4fJxPCbfqv7Xi" width="96" height="82" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>`
+                var Letter = document.getElementById('Letter').value;
+
+            
+
+                // Make a POST request to the REST API with the input values
+
+                //fetch('/ProductAdvisor', {
+                fetch('https://cors-anywhere.herokuapp.com/http://ec2-18-190-90-15.us-east-2.compute.amazonaws.com/ProductAdvisor', {
+
+                    method: 'POST',
+
+                    headers: {
+
+                    'Accept': 'application/json',
+
+                    'Content-Type': 'application/json'
+
+                    },
+
+                    body: JSON.stringify({
+
+                    CustName: "",
+
+                    CustType: "",
+
+                    Make: Letter,
+
+                    Model: "",
+
+                    CompetMake: "",
+
+                    CompetModel: "",
+
+                    ResponseType: "menhealth"
+
+                    })
+
+                })
+
+                .then(response => response.json()) // Parse the response as JSON
+
+                .then(data => {
+
+                    // Update the result label with the API response
+
+                document.getElementById('AIResults').innerHTML = `<p>${data.Text.replace(/\n/g, "<br />")}</p>`;});});
+            </script>
+        </div>
     </body>
 </html>
